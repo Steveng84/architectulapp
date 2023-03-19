@@ -1,12 +1,12 @@
-import { css } from "@emotion/react";
+import { css } from "@emotion/css";
 
 const IncreaseButton = (props) => {
   return (
     <div>
       <button
-        css={myClassName}
-        //className="button"
-        //style={{ backgroundColor: "green" }}
+        //css={myClassName()}
+        className={myClassName()}
+        //style={myClassName()}
         onClick={props.onClick}
       >
         increaseCounter
@@ -15,10 +15,10 @@ const IncreaseButton = (props) => {
   );
 };
 
-const myClassName = css`
+const myClassName = () => css`
   background-color: green;
   color: black;
-  padding: 1rem;
+  border-radius: 10px;
 `;
 
 export default IncreaseButton;
