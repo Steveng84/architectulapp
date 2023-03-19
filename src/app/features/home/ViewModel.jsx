@@ -5,7 +5,6 @@ const ViewModel = () => {
   let navigate = useNavigate();
 
   function navigateToProfile() {
-    console.log("navigate");
     navigate("/profile");
   }
 
